@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50334321-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-50334321-1');
+    </script>
+    
+    <!-- Basics-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }} - Wagner Rosa{% else %}Wagner Rosa{% endif %}</title>
+    
+    <!-- CSS Rules -->
+    {% if page.css %}
+    <link rel="stylesheet" href="/assets/css/posts/{{ page.css }}.css">
+    {% else %}
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    {% endif %}
+
+    <!-- Canonical https://gist.github.com/bennylope/1894706  -->
+    <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  </head>
