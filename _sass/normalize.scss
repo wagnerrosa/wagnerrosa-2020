@@ -347,3 +347,17 @@
   [hidden] {
     display: none;
   }
+
+ /**
+   * https://pt.stackoverflow.com/questions/40662/float-em-algum-elemento-e-a-div-n%C3%A3o-acompanha-o-conte%C3%BAdo
+   */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
