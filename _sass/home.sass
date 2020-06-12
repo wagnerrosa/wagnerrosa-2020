@@ -21,10 +21,7 @@ $verde: #E2FE01
 
 
 #mode
-    max-width: 360px
-    margin: 10% auto 0 auto
-    padding: 10px 5px
-    border: 1px solid $black
+    padding: 10px 5px 0 5px  
     border-radius: 20px
     header
         display: flex
@@ -45,6 +42,7 @@ $verde: #E2FE01
     main 
         display: flex
         flex-wrap: wrap
+        margin: 10px 0
         a 
             text-decoration: none
             color: $black
@@ -60,3 +58,13 @@ $verde: #E2FE01
             font-size: 12px
         span 
             font-size: 10px
+
+@media (min-width: 767px)
+    #mode
+        max-width: 100%
+
+@media (min-width: 768px)
+    #mode
+        max-width: 360px
+        margin: 10% auto 0 auto
+        border: 1px solid $black
