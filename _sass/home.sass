@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Open+Sans:wght@300;400;700&display=swap')
+
+body, p, span, h2
+    font-family: 'Open Sans', sans-serif
+    font-weight: 300
+    margin: 0
+
+h1, h3, h4, h5 
+    font-family: 'Fira Sans', sans-serif
+    margin: 0
+
+$black: #000000
+$grey: #191919
+$verde: #E2FE01
+.boxe
+    border: 1px solid $black
+    border-radius: 10px
+    margin: 2px
+    &:hover
+        background-color: $verde
+
+
+#mode
+    max-width: 360px
+    margin: 10% auto 0 auto
+    padding: 10px 5px
+    border: 1px solid $black
+    border-radius: 20px
+    header
+        display: flex
+        h1 
+            font-size: 20px
+        h2, span
+            font-size: 10px
+        h2 
+            font-weight: 400
+            line-height: 0.8
+
+        img
+            max-width: 60px
+            border: 1px solid $black
+            border-radius: 30px
+            margin-right: 2px
+
+    main 
+        display: flex
+        flex-wrap: wrap
+        a 
+            text-decoration: none
+            color: $black
+            flex-grow: 1
+            text-align: center
+            padding: 10px 0
+        svg 
+            max-width: 23px
+            margin: 10px 0
+        h3 
+            flex-basis: 100%
+        h4 
+            font-size: 12px
+        span 
+            font-size: 10px
