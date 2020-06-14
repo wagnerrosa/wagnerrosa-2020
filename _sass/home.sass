@@ -4,20 +4,46 @@ body, p, span, h2
     font-family: 'Open Sans', sans-serif
     font-weight: 300
     margin: 0
+    color: var(--text)
 
 h1, h3, h4, h5 
     font-family: 'Fira Sans', sans-serif
     margin: 0
+    color: var(--text)
 
-$black: #000000
-$grey: #191919
-$verde: #E2FE01
+\:root
+    --black: #000000
+    --grey: #191919
+    --green: #E2FE01
+    --white: #FFFFFF
+    --none: transparent
+
+.day
+    --bg: var(--white)
+    --box: var(--black)
+    --text: var(--black)
+    --select: var(--green)
+
+.night
+    --bg: var(--black)
+    --box: var(--none)
+    --text: var(--white)
+    --select: var(--green)    
+
+body
+    background-color: var(--bg)
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out
+
 .boxe
-    border: 1px solid $black
+    border: 1px solid var(--box)
     border-radius: 10px
     margin: 2px
     &:hover
-        background-color: $verde
+        background-color: var(--select)
+        h4, span 
+            color: var(--black)
+        svg 
+            fill: var(--black) !important
 
 
 #mode
@@ -35,7 +61,7 @@ $verde: #E2FE01
 
         img
             max-width: 60px
-            border: 1px solid $black
+            border: 1px solid var(--box)
             border-radius: 30px
             margin-right: 2px
 
@@ -45,13 +71,14 @@ $verde: #E2FE01
         margin: 10px 0
         a 
             text-decoration: none
-            color: $black
+            color: var(--text)
             flex-grow: 1
             text-align: center
             padding: 10px 0
         svg 
             max-width: 23px
             margin: 10px 0
+            fill: var(--text)
         h3 
             flex-basis: 100%
         h4 
@@ -67,4 +94,4 @@ $verde: #E2FE01
     #mode
         max-width: 360px
         margin: 10% auto 0 auto
-        border: 1px solid $black
+        border: 1px solid var(--black)

@@ -1,5 +1,5 @@
 {% include head.html %}
-  <body>
+  <body class="day" id="theme">
     <div id="mode">
       <header>
         <div>
@@ -10,7 +10,11 @@
           <h2>Multimedia Design</h2>
           <span>Porto Alegre, RS - BR</span>
         </div>
-        <div>
+        <div> <!--
+
+          <a href="#" id="day" class="theme">day</a>
+          <a href="#" id="night" class="theme">night</a>
+        -->
         </div>
       </header>
       <main>
@@ -70,6 +74,6 @@
       </main>
 
     </div>
-
+    <script type="module" src="/assets/darkmode.js"></script>
   </body>
 {% include footer.html %}
