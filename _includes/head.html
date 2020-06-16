@@ -15,15 +15,17 @@
     
     <!-- Basics-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>{% if page.title %}{{ page.title }} - Wagner Rosa{% else %}Wagner Rosa{% endif %}</title>
     
     <!-- CSS Rules -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     {% if page.css %}
     <link rel="stylesheet" href="/assets/css/posts/{{ page.css }}.css">
     {% else %}
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
     {% endif %}
+    <script src="https://use.fontawesome.com/321c5a0c75.js"></script>
 
     <!-- Canonical https://gist.github.com/bennylope/1894706  -->
     <link rel="canonical" href="{{ page.url | absolute_url }}" />
