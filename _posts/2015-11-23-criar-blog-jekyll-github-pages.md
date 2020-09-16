@@ -99,7 +99,7 @@ Após realizar as alterações necessárias, role a página um pouco para a baix
 > O _Commit_ funciona como um controle das alterações que você realiza no seu repositório. Cada mudança realizada é marcada com um Commit. Você pode nomear e até mesmo descrever quais foram as mudanças que fez, tendo assim um controle de versões dos arquivos do seu Site/Blog. Esse sistema será utilizado em qualquer modificação/adição/remoção de arquivos dentro do GitHub, incluse na criação de Posts. 
 
 
-![Dê um Commit]({{ site.url }}/img/post02/img7.png)
+![Dê um Commit](/assets/img/post02/img7.png)
 
 #### 3. Crie um Post
 

@@ -1,10 +1,18 @@
 {% include head.html %}
 
-<body class="" id="theme">
+<body class="" id="blogpost">
     <div id="mode">
-        {{ content }}
+        <header>
+            <div id="darkmode">        
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                  <div class="ball"></div>
+                  <button id="botao-note" disabled aria-label="Dark Mode 🌖" data-balloon-pos="down"></button>
+                </label>         
+              </div>
+        </header>
+        <main>
+            {{ content }}            
+        </main>
     </div>
-    
-</body>
-
 {% include footer.html %}
