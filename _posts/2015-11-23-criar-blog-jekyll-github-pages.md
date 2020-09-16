@@ -2,6 +2,7 @@
 layout: blogpost
 title: Como eu criei facilmente um Blog Minimalista usando Jekyll e Github Pages.
 subhead: MUITO SIMPLES. ELEGANTE. WOW.
+permalink: /criar-blog-jekyll-github-pages/
 ---
 
 Eu recentemente criei alguns blogs em [Wordpress](http://wordpress.org/) para amigos, conhecidos, clientes, etc. Possuo um leve conhecimento na lógica do sistema em Wordpress que aprendi lendo muitos tutoriais, do restante apenas:
@@ -49,13 +50,13 @@ A forma mais fácil e rápida de ter o seu Website/Blog em Jekyll online é util
 #### 1. Escolha um template e dê um Fork
 Acesse o site [JekyllThemes](http://jekyllthemes.org/) e escolha um dos vários templates disponíveis para utilização. Após escolhido o template, selecione a opção __Fork__ disponível na parte inferior esquerda da tela, como demonstrado na imagem a baixo.
 
-![Dar um Fork]({{ site.url }}/img/post02/img4.png)
+![Dar um Fork](/assets/img/post02/img4.png)
 
 Ao selecionar o opção __Fork__, você __criará uma cópia do Projeto__ (template escolhido) em um novo __repositório na sua página de perfil do Github__. Portanto, se houver a pergunta "onde você deseja realizar o Fork" apenas selecione seu perfil e aguarde realizar a cópia.
 
 A partir de agora, você possui em seu perfil uma cópia do template escolhido e ele encontra-se nos __SEUS REPOSITÓRIOS__.  Então, basta ir na opção __Settings__ e __alterar o nome do repositório__ para __seunomedeusuário.github.io__. Este será o seu futuro domínio, no meu caso ficou _wagnerrosa_.github.io.
 
-![Dar um Fork]({{ site.url }}/img/post02/img5.png)
+![Dar um Fork](/assets/img/post02/img5.png)
 
 
 Após isso, o seu site ficará imediatamente disponível através do nome do seu repositório, que no caso será __seunomedeusuário__.github.io. Acesse para testar. (Se não estiver, o próximo passo forçará isso).
@@ -91,7 +92,7 @@ Nos arquivos disponíveis dentro do repositório você irá perceber que eles po
 {% endhighlight %}
 No arquivo _config.yml é onde se contra as configurações principais do Website. Clique em cima dele para poder acessar a sua página de edição. Clique no lápis para poder alterar as informações e substitua pelo seus dados. Lembrando que a página url deve ser __seunomedeusuario.github.io__. (se o exemplo do template possui na frente do domínio o __http://__ mantenha também no seu.)
 
-![Editar o _config.yml]({{ site.url }}/img/post02/img6.png)
+![Editar o _config.yml](/assets/img/post02/img6.png)
 
 Após realizar as alterações necessárias, role a página um pouco para a baixo e encontre a opção de __Commit Changes__. 
 

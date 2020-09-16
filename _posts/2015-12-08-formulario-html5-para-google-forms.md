@@ -2,7 +2,7 @@
 layout: blogpost
 title: Conectar Formulário HTML 5 com Google Forms
 subhead: Descobri. Sim! It's possible.
-permalink: /conectar/
+permalink: /formulario-html5-para-google-forms/
 ---
 
 
@@ -17,7 +17,7 @@ E eu vou tentar resumir aqui de um jeito bem raso o processo, até porque é o j
 
 ## Qual era a ideia?
 
-![Formulário de contato em HTML5]({{ page.url | absolute_url }}img/post3/formulario-contato-html5.png){: .half .right}
+![Formulário de contato em HTML5](/assets/img/post3/formulario-contato-html5.png){: .half .right}
 
 Nesta última semana estava precisando criar um formulário de contato básico com __Nome, E-mail, Empresa e Mensagem__. Mas com uma __"ousadia diferente"__: além de receber a mensagem do remetente haveria uma pergunta com _"escolha em lista"_, onde o usuário marcaria "onde nos encontrou". __Parecia uma ideia simples.__  
 
@@ -34,7 +34,7 @@ Eu já havia criado o meu formulário em HTM5 (como mostrado na imagem acima) en
 - Instalei um complemento de notificação por e-mail.   
    
 
-![Formulário de contato em HTML5](img/post3/formulario-contato-google.png)
+![Formulário de contato em HTML5](/assets/img/post3/formulario-contato-google.png)
 
 
 ### Valores Action e Names
@@ -43,10 +43,10 @@ O grande truque da jogada, que eu __não havia pensado antes__, é como cruzar p
 
 Para isso, bastava __publicar online o Formulário do Google__ e inspecionar a página exibindo o __código fonte__. Os valores que eu estava em busca eram o ``<form action="">`` e o ``<input name="">``
 
-[![Form Action - Google Formulário](img/post3/formulario-contato-google-action.png){: .half .right}](http://wagnerrosa.com/img/post3/formulario-contato-google-action.png)
+[![Form Action - Google Formulário](/assets/img/post3/formulario-contato-google-action.png){: .half .right}](http://wagnerrosa.com/img/post3/formulario-contato-google-action.png)
 Encontrei o ``<form action="">``, copiei e colei no meu formulário em html. 
 
-[![Form Name - Google Formulário](img/post3/formulario-contato-google-name.png){: .half .right}](http://wagnerrosa.com/img/post3/formulario-contato-google-name.png)
+[![Form Name - Google Formulário](/assets/img/post3/formulario-contato-google-name.png){: .half .right}](http://wagnerrosa.com/img/post3/formulario-contato-google-name.png)
 
 Em seguida busquei pelos ``<input name="">``, que para cada pergunta havia um. Copiei todos e substituí os que haviam no meu formulário em html, de acordo com cada input (Nome, E-mail, Empresa, Onde nos encontrou e Mensangem).  
 
@@ -90,5 +90,5 @@ A partir de agora, __sem interferir no desempenho do site__, o simples formulár
 2. Guardar informações (Nome, E-mail, Empresa) como uma _"Cartela de Clientes"_;
 3. E ainda analisar os dados de forma fácil e resumidamente.
 
-![Resumo das Respostas do Google Form](/img/post3/formulario-contato-google-resumo-respostas.png)
+![Resumo das Respostas do Google Form](/assets/img/post3/formulario-contato-google-resumo-respostas.png)
 _Imagem do Resumo das Respostas disponível no Google Form_
