@@ -15,9 +15,10 @@
     header
         h1
             font-size: 36px
-            padding: 10px 0
+            padding: 5px 0
             font-weight: 400
             background-color: var(--green)
+            letter-spacing: 3px
         span
             font-family: 'Fira Sans', sans-serif
             font-size: 32px
@@ -44,8 +45,6 @@
         iframe
             margin: 30px auto
             display: block
-            width: 780px
-            height: 450px
         p
             margin: 0 0 20px
         ul
@@ -56,16 +55,7 @@
             li
                 &:first-child
                     font-weight: bold
+        .map-responsive
+            max-width: 800px
+            height: 450px          
 
-    @media screen and (max-width: 650px)
-        iframe
-            width: 620px
-            height: 450px
-    @media screen and (max-width: 550px)
-        iframe
-            width: 520px
-            height: 450px
-    @media screen and (max-width: 450px)
-        iframe
-            width: 420px
-            height: 350px
